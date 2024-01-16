@@ -47,6 +47,7 @@ img {
 /* #endregion Base */
 
 /* #region Header */
+
 .header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
@@ -219,15 +220,6 @@ img {
   width: calc((100% - 72px) / 4);
 }
 
-.advantages-name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
-}
-
 .advantages-wrapper {
   height: 112px;
   flex-shrink: 0;
@@ -238,6 +230,15 @@ img {
   justify-content: center;
   margin-bottom: 8px;
   align-items: center;
+}
+
+.advantages-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .advantages-list {
@@ -322,6 +323,13 @@ img {
   text-align: center;
 }
 
+.team-li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
 .team-icons {
   height: 40px;
   width: 40px;
@@ -333,17 +341,12 @@ img {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .team-icons:hover,
 .team-icons:focus {
   background-color: #404bbf;
 }
-.team-li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  gap: 24px;
-}
 /* #endregion Team */
 
 /* #region Portfolio */
@@ -351,6 +354,17 @@ img {
 .portfolio {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.title-portfolio {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  line-height: 1.11;
+  color: #2e2f42;
+  margin-bottom: 72px;
+  text-align: center;
 }
 
 .portfolio-ul {
@@ -372,15 +386,9 @@ img {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.title-portfolio {
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  line-height: 1.11;
-  color: #2e2f42;
-  margin-bottom: 72px;
-  text-align: center;
+.portfolio-pic {
+  position: relative;
+  overflow: hidden;
 }
 
 .portfolio-div {
@@ -408,10 +416,6 @@ img {
   color: #434455;
 }
 
-.portfolio-pic {
-  position: relative;
-  overflow: hidden;
-}
 .overlay {
   position: absolute;
   transform: translateY(100%);
